@@ -1,0 +1,9 @@
+{
+    "name": "kokoro-pixel",
+    "version": "0.1.0",
+    "dependencies": [
+        "sfml",
+        "imgui-sfml",
+        "imgui"
+    ]
+}

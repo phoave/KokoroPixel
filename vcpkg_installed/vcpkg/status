@@ -1,0 +1,198 @@
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 86ff970039826343a809a782520d10731d103e4594dbfea58638697c0a2086d8
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2024-04-18
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 8736ff0be0e47299885cd15535285715d63f28f59dbd200da39b06405f74857d
+Status: install ok installed
+
+Package: stb
+Version: 2023-04-11
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 72f4a72889535ca6a474cfcd93e9f38889f963ceac996014cc1957d914ec6593
+Description: public domain header-only libraries
+Status: install ok installed
+
+Package: egl-registry
+Version: 2024-01-25
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 95368d25beb3714a2b4996711bf567067982185fce4561a12e4cbc4a182c62ae
+Description: EGL API and Extension Registry
+Status: install ok installed
+
+Package: opengl-registry
+Version: 2024-02-10
+Port-Version: 1
+Depends: egl-registry
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 8b0580a39a33dfb8c38317adce968e07bc75aa44cbbb424c2006f1498052b54c
+Description: OpenGL, OpenGL ES, and OpenGL ES-SC API and Extension Registry
+Status: install ok installed
+
+Package: opengl
+Version: 2022-12-04
+Port-Version: 3
+Depends: opengl-registry
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 83bcdb738d31ad5b310274a0cdbf4f47a495f09bc6a4d4f152a0b79a26b0e6aa
+Description: Open Graphics Library (OpenGL)[3][4][5] is a cross-language, cross-platform application programming interface (API) for rendering 2D and 3D vector graphics.
+Status: install ok installed
+
+Package: openal-soft
+Version: 1.23.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: b007b54d2289daa427036b67534ee72c0a74235af1d40adb8292c225703a7f15
+Description: OpenAL Soft is an LGPL-licensed, cross-platform, software implementation of the OpenAL 3D audio API.
+Status: install ok installed
+
+Package: libogg
+Version: 1.3.5
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 044c33ac2d29d21990c9743602b620c037eb86f7f93ef1d7b76a5fe25314fc76
+Description: Ogg is a multimedia container format, and the native file and stream format for the Xiph.org multimedia codecs.
+Status: install ok installed
+
+Package: libvorbis
+Version: 1.3.7
+Port-Version: 2
+Depends: libogg, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: a36c749bb3ad1f5cca6c2e40b009207543d8f6d4c783e555adc6f0146c68554b
+Description: Ogg Vorbis is a fully open, non-proprietary, patent-and-royalty-free, general-purpose compressed audio format
+Status: install ok installed
+
+Package: libflac
+Version: 1.4.3
+Port-Version: 2
+Depends: libogg, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: c2ba3ad324fb840d7db23fea38c80b6d35c519d61b87e6003e57d55725f66f9b
+Description: Library for manipulating FLAC files
+Default-Features: stack-protector
+Status: install ok installed
+
+Package: libflac
+Feature: stack-protector
+Architecture: x64-windows
+Multi-Arch: same
+Description: Build with stack smashing protection
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: a387a250f2ae1bc0f21c867c992d53a941a3767e6337440de1210bca7227b4ab
+Description: A compression library
+Status: install ok installed
+
+Package: libpng
+Version: 1.6.43
+Port-Version: 2
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 88530d9bd0ac1255e0a9a55ea7bbb47fc498195447e00ef0f0f184bf1a6b79c4
+Description: libpng is a library implementing an interface for reading and writing PNG (Portable Network Graphics) format files
+Status: install ok installed
+
+Package: bzip2
+Version: 1.0.8
+Port-Version: 5
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: f3473bc1bfcc56f59adee417364f90ab5201c117681ae26f37263482e8b4ebc7
+Description: bzip2 is a freely available, patent free, high-quality data compressor. It typically compresses files to within 10% to 15% of the best available techniques (the PPM family of statistical compressors), whilst being around twice as fast at compression and six times faster at decompression.
+Default-Features: tool
+Status: install ok installed
+
+Package: bzip2
+Feature: tool
+Architecture: x64-windows
+Multi-Arch: same
+Description: Builds bzip2 executable
+Status: install ok installed
+
+Package: brotli
+Version: 1.1.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 42486498b023eb9c6936f2bf6c1e2b6b282828195bb84c39a647e82abc74c8cd
+Description: a generic-purpose lossless compression algorithm that compresses data using a combination of a modern variant of the LZ77 algorithm, Huffman coding and 2nd order context modeling.
+Status: install ok installed
+
+Package: freetype
+Version: 2.13.2
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 75c91b866b768f671496337529aabf8090ff5cd2ab2b4b3f9abee40539782014
+Description: A library to render fonts.
+Default-Features: brotli, bzip2, png, zlib
+Status: install ok installed
+
+Package: freetype
+Feature: brotli
+Depends: brotli
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support decompression of WOFF2 streams
+Status: install ok installed
+
+Package: freetype
+Feature: bzip2
+Depends: bzip2
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support bzip2 compressed fonts.
+Status: install ok installed
+
+Package: freetype
+Feature: png
+Depends: libpng
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support PNG compressed OpenType embedded bitmaps.
+Status: install ok installed
+
+Package: freetype
+Feature: zlib
+Depends: zlib
+Architecture: x64-windows
+Multi-Arch: same
+Description: Use zlib instead of internal library for DEFLATE
+Status: install ok installed
+
+Package: sfml
+Version: 2.6.1
+Depends: freetype, libflac, libogg, libvorbis, openal-soft, opengl, stb, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: a575b44a78ffb82b4c4632e102d164664dde318bc3031b0847d4b30b9af28c28
+Description: Simple and fast multimedia library
+Status: install ok installed
+

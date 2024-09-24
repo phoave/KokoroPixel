@@ -1,0 +1,22 @@
+# Build directory
+build/
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.tmp
+*.log
+*.o
+*.obj
+
+# MacOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
