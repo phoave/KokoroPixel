@@ -29,7 +29,7 @@ int main() {
 
         ImGui::SFML::Update(window, deltaClock.restart());
 
-        // Begin custom dock space
+      
         DockSpace::BeginDockSpace();
 
         // Toolbox
@@ -51,7 +51,7 @@ int main() {
         ImGui::Text("Canvas Size: %.1f, %.1f", canvasSize.x, canvasSize.y);
         ImGui::End();
 
-        // End custom dock space
+    
         DockSpace::EndDockSpace();
 
         ImGui::SFML::Render(window);
