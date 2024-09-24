@@ -1,4 +1,7 @@
 # Kokoro Pixel
+![image](https://github.com/user-attachments/assets/7894445c-ef96-4534-8b01-943bc7d305e1)
+
+
 
 Kokoro Pixel is a pixel art application developed in C++ using CMake and vcpkg for package management. This project aims to provide a user-friendly interface for creating pixel art.
 # Important Notice
